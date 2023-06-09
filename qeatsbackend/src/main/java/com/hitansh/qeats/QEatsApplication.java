@@ -14,9 +14,6 @@ public class QEatsApplication {
   public static void main(String[] args) {
     SpringApplication.run(QEatsApplication.class, args);
 
-    // TIP:MODULE_RESTAPI: If your server starts successfully,
-    // you can find the following message in the logs.
-    // log.info("Congrats! Your QEatsApplication server has started");
   }
 
   /**
