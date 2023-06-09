@@ -1,0 +1,63 @@
+package com.hitansh.qeats.exchanges;
+
+import com.hitansh.qeats.dto.Restaurant;
+import java.util.List;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+// {
+//  "restaurants": [
+//    {
+//      "restaurantId": "10",
+//      "name": "A2B",
+//      "city": "Hsr Layout",
+//      "imageUrl": "www.google.com",
+//      "latitude": 20.027,
+//      "longitude": 30.0,
+//      "opensAt": "18:00",
+//      "closesAt": "23:00",
+//      "attributes": [
+//        "Tamil",
+//        "South Indian"
+//      ]
+//    },
+//    {
+//      "restaurantId": "11",
+//      "name": "Shanti Sagar",
+//      "city": "Btm Layout",
+//      "imageUrl": "www.google.com",
+//      "latitude": 20.0269,
+//      "longitude": 30.00,
+//      "opensAt": "18:00",
+//      "closesAt": "23:00",
+//      "attributes": [
+//        "Udupi",
+//        "South Indian"
+//      ]
+//    }
+//  ]
+
+@Data
+@NoArgsConstructor
+public class GetRestaurantsResponse {
+  List<Restaurant> restaurants;
+
+  public GetRestaurantsResponse(List<Restaurant> restaurant) {
+    this.restaurants = restaurant; 
+  }
+
+  // public GetRestaurantsResponse() {}
+
+  public List<Restaurant> getRestaurants() {
+    return restaurants;
+  }
+
+  public void setRestaurants(List<Restaurant> restaurants2) {
+    this.restaurants = restaurants2;
+  }
+
+
+}
+
+// }
